@@ -8,9 +8,17 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // gets '/' route
-app.get('/', function(req, res){
+app.get('/about', function(req, res){
     res.render('about.ejs');
 });
+
+app.get('/contact', function(req, res){
+    res.render('/contact.ejs');
+});
+
+app.get('/project', function(req, res){
+    res.render('project.ejs');
+})
 
 // starting up our server to listen for http request
 app.listen(3000, function(){
