@@ -7,6 +7,9 @@ const app = express();
 // setting view engine
 app.set('view engine', 'ejs');
 
+// add middleware
+app.use(express.static('./public'));
+
 // gets '/' route
 app.get('/about', function(req, res){
     res.render('about.ejs');
