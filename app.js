@@ -17,7 +17,7 @@ app.get('/contact', function(req, res){
 });
 
 app.get('/project', function(req, res){
-    res.render('project.ejs');
+    res.render('/project.ejs');
 })
 
 // starting up our server to listen for http request
