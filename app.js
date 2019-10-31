@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('./public'));
 
 // gets '/' route
-app.get('/about', function(req, res){
+app.get('/', function(req, res){
     res.render('about.ejs');
 });
 
